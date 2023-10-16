@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx lint-staged
+
+# 如果用的第三方软件提交 例如： SourceTree 且用的 NVM。 执行以下命令。
+# echo 'export NVM_DIR="$HOME/.nvm"\n[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  >> ~/.huskyrc
+# 参考：https://typicode.github.io/husky/#/?id=command-not-found
